@@ -11,8 +11,6 @@ jobs:
 
     runs-on: ubuntu-latest
     steps:
-      - with:
-          actor: 'yofi'
       - name: Set Custom Vars
         id: set-vars
         run: |
