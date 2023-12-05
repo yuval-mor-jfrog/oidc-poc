@@ -21,7 +21,7 @@ jobs:
           "${ACTIONS_ID_TOKEN_REQUEST_URL}&audience=jfrog-github&actor=yofi2" | jq .value | tr -d '"')
           echo "ID_TOKEN=${ID_TOKEN}" >> $GITHUB_ENV
           echo "${ID_TOKEN}" | base64
-          echo "YOFIz"
+          echo "YOFI"
       - name: Exchange token with access
         env:
           ID_TOKEN: ${{ env.ID_TOKEN }}
